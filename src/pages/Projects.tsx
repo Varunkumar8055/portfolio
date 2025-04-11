@@ -1,39 +1,37 @@
 import React from 'react';
+import './Projects.css';
 
 const Projects: React.FC = () => {
   return (
-    <section style={{ padding: '2rem' }}>
-      <h2>Projects</h2>
+    <section className="projects-section">
+      <h2 className="projects-title">Projects</h2>
 
-      <div>
-        <h3>🧠 EEG-Based Cognitive Level Classifier</h3>
+      <div className="project-card">
+        <h3>🧠 EEG-Based Cognitive Level Classification</h3>
         <p>
-          Classified student learning levels ('Best' vs 'Slow' learners) using EEG signals. Extracted band power,
-          entropy, and coherence features and trained a CNN-LSTM model.
+          Developed a machine learning pipeline to classify students into <strong>Best Learner</strong> and <strong>Slow Learner</strong> categories using EEG signals.
+          Applied signal processing, feature extraction (band power, entropy), and built CNN-LSTM models for classification.
         </p>
       </div>
 
-      <div>
-        <h3>🎯 Fashion Outfit Recommender from User Photos</h3>
+      <div className="project-card">
+        <h3>🧥 Fashion Outfit Recommender</h3>
         <p>
-          Suggests outfits by analyzing user-uploaded clothes using DeepFashion dataset, GPT-2, and FAISS retrieval.
-          Deployed on GCP with a Streamlit UI.
+          Built a system that analyzes user-uploaded clothing images and recommends fashionable outfits using <strong>DeepFashion Dataset</strong>, <strong>RAG (GPT-2 + FAISS)</strong>, and deployed via <strong>GCP + Streamlit</strong>.
         </p>
       </div>
 
-      <div>
-        <h3>💬 Inspiring Quotes Generator</h3>
+      <div className="project-card">
+        <h3>💬 Inspiring Quote Generator</h3>
         <p>
-          Created a REST API-based quote generator using NLP. Developed during early learning of ML and NLP
-          concepts.
+          A fun web app that generates motivational quotes using NLP and REST APIs. Integrated with sentiment analysis to personalize quote recommendations.
         </p>
       </div>
 
-      <div>
-        <h3>🌐 Second Brain</h3>
+      <div className="project-card">
+        <h3>🗃️ Distributed Database Simulation</h3>
         <p>
-          Productivity tool using RAG, Weaviate, Mistral, and Next.js for managing thoughts, research, and knowledge
-          across devices.
+          Simulated a distributed database system (DDBS) to demonstrate data fragmentation, replication, and query processing over nodes. Great for teaching and demos!
         </p>
       </div>
     </section>
