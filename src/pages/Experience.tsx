@@ -1,26 +1,25 @@
 import React from 'react';
+import './Experience.css';
 
 const Experience: React.FC = () => {
   return (
-    <section style={{ padding: '2rem' }}>
-      <h2>Work Experience</h2>
+    <section className="experience-section">
+      <h2 className="experience-title">Work Experience</h2>
 
-      <div>
+      <div className="experience-card">
         <h3>Associate Technician – Toyota Kirloskar Motors</h3>
-        <p><strong>Duration:</strong> 1 Year</p>
-        <ul>
-          <li>Led teams in cost management and resource allocation.</li>
-          <li>Oversaw facility operations for key projects: CMPV and Logistic Floor Slope.</li>
-          <li>Managed project efficiency, team coordination, and ensured smooth shop floor processes.</li>
-        </ul>
+        <span className="experience-duration">1 Year</span>
+        <p>
+          Led teams in cost management, resource allocation, and facility operations. Worked on the <strong>CMPV</strong> (Compact Multi-Purpose Vehicle) and <strong>Logistic Floor Slope</strong> projects. Managed shop floor planning, optimizing efficiency and safety.
+        </p>
       </div>
 
-      <div style={{ marginTop: '1.5rem' }}>
-        <h3>Freelance Full Stack Web Developer</h3>
-        <ul>
-          <li>Built dynamic web applications using React.js, Next.js, Node.js, and TypeScript.</li>
-          <li>Integrated AI models and vector databases (Mistral, Weaviate) for intelligent apps.</li>
-        </ul>
+      <div className="experience-card">
+        <h3>FUll Stack – StackLane</h3>
+        <span className="experience-duration">Internship</span>
+        <p>
+          Spearheaded project operations and resource allocation across departments. Applied data-driven strategies to maintain operational excellence and cost efficiency in large-scale engineering workflows.
+        </p>
       </div>
     </section>
   );

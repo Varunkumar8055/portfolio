@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
+import './Profile.css'; // Make sure to import the CSS with gradient styles
 
 const Profile: React.FC = () => {
   return (
@@ -7,10 +8,12 @@ const Profile: React.FC = () => {
       <img
         src="/me.jpg"
         alt="Varunkumar"
-        style={{ width: '140px', height: '140px', borderRadius: '50%', border: '3px solid #1abc9c', marginBottom: '1rem' }}
+        style={{ width: '180px', height: '180px', borderRadius: '80%', border: '3px solid #1abc9c', marginBottom: '1rem' }}
       />
       <h1>
-        Varunkumar <span className="badge">AI & Data Science</span> <span className="badge">Full Stack</span>
+        Hi I'm <span className="gradient-text">Varunkumar</span>{' '}
+        <span className="badge">AI & Data Science</span>{' '}
+        <span className="badge">Full Stack</span>
       </h1>
       <p style={{ color: '#ccc' }}>
         B.Tech @ SIT | React, Node.js | ML & NLP Enthusiast
