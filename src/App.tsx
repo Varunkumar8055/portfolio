@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Profile from './pages/Profile/Profile';
 import About from './pages/About/About';
 import Experience from './pages/Experience/Experience';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects/Projects';
 import Interests from './pages/Interests/Interests';
 import Education from './pages/Education/Education';
 import Contact from './pages/Contact/Contact';
